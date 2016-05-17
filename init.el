@@ -10,7 +10,7 @@
   (scroll-bar-mode -1))
 
 ;; display line numbers
-(global-linum-mode 1)
+(global-linum-mode -1)
 
 ;; display the number of the currently selected column
 (column-number-mode 1)
