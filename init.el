@@ -10,7 +10,7 @@
   (scroll-bar-mode -1))
 
 ;; display line numbers
-(global-linum-mode 1)
+(global-linum-mode -1)
 
 ;; display the number of the currently selected column
 (column-number-mode 1)
@@ -97,7 +97,7 @@
 ;; overrides the original configuration of yes/no to accept y/n    
 ; (fset 'yes-or-no-p 'y-or-n-p)
 
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; startup with org-indent-mode enabled
 (setq org-startup-indented t)
@@ -159,3 +159,5 @@
 (add-hook 'comint-output-filter-functions
           'comint-watch-for-password-prompt)
 
+(require 'evil)
+(evil-mode 1)
